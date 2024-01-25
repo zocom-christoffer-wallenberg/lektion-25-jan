@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #222222;
+}
+
+.header {
+    min-height: 37rem;
+    background-color: #3DE07E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .navigation {
+        align-self: flex-start;
+        margin-left: 1rem;
+        margin-top: auto;
+    }
+}
+
+.cards {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    & .card-item {
+        grid-column: auto / span 2;
+    }
+
+    & .card-big-item {
+        grid-column: auto / span 3;
+    }
+}
